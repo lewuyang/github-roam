@@ -1,6 +1,6 @@
 include_dir=build
 source=chapters/*.md
-title='Github 漫游指南'
+title='GitHub 漫游指南'
 filename='github-roam'
 
 
@@ -42,6 +42,7 @@ pdf: markdown
 	# Then symlink it: ln -s /path/to/pdflatex /usr/local/bin
 	pandoc -s $(filename).md -o $(filename).pdf \
 		--title-prefix $(title) \
+		--listings -H listings-setup.tex \
 		--template=template.tex \
 		--normalize \
 		--smart \

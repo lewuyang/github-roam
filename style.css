@@ -32,7 +32,8 @@ a img {
 }
 
 p {
-    margin-bottom: 20px;
+    text-indent: 2em;
+    margin-bottom: 12px;
 }
 
 h1,
@@ -46,8 +47,10 @@ h6 {
 }
 
 h1 {
-    margin-bottom: 18px;
+    margin-bottom: 32px;
+    margin-top: 32px;
     font-size: 30px;
+    color: #0050a3;
 }
 
 h1 a {
@@ -57,10 +60,12 @@ h1 a {
 
 h2 {
     font-size: 24px;
+    margin-bottom: 28px;
 }
 
 h3 {
     font-size: 18px;
+    margin-bottom: 24px;
 }
 
 h4 {
@@ -82,8 +87,8 @@ hr {
 }
 
 blockquote {
-    padding: 13px 13px 21px 15px;
-    margin-bottom: 18px;
+    padding: 2px 13px 21px 2px;
+    margin-bottom: 12px;
     font-family: georgia,serif;
     font-style: italic;
 }
@@ -125,7 +130,7 @@ pre {
     line-height: 16px;
     font-size: 11px;
     border: 1px solid #d9d9d9;
-    white-space: pre-wrap;
+    white-space: pre-line;
     word-wrap: break-word;
 }
 
@@ -134,10 +139,18 @@ pre code {
     color: #737373;
     font-size: 11px;
     padding: 0;
+    white-space: pre-wrap;
 }
 
+
 figure img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
 }
 
 ul li a {
@@ -153,4 +166,54 @@ ul li ul a {
         width: 748px;
         margin: 40px auto;
     }
+}
+
+
+table {
+    margin: 10px auto;
+}
+
+thead {
+    font-size: 120%;
+    font-weight: 1000;
+    cursor: pointer;
+    background: #c9dff0
+}
+
+thead tr th {
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 30px;
+    padding-left: 42px
+}
+
+thead tr th span {
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%
+}
+
+tbody tr td {
+    padding: 15px 10px
+}
+
+tbody tr td.lalign {
+    text-align: left
+}
+
+tbody tr:nth-child(even) {
+    background: #fff
+}
+
+tbody tr:nth-child(odd) {
+    background: #eee
+}
+
+td,th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: .5em 1em
 }
